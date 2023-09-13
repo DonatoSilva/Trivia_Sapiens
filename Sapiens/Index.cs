@@ -26,17 +26,22 @@ namespace Sapiens
 
         private void BtnPlay(object sender, EventArgs e)
         {   
-            String name = txtName.Text;
-            // Obtén una referencia al formulario MDI principal
-            if (this.MdiParent is appStrart app)
+            String name = txtName.Text.Trim();
+            if (!String.IsNullOrEmpty(name))
             {
-                Play play = new Play(name); // Crea una instancia de Play
-                play.Width = app.ClientSize.Width -  4;
-                play.Height = app.ClientSize.Height - 4;
-                play.MdiParent = app; // Establece el formulario MDI principal como el padre de play
-                play.Show(); // Muestra play
-                this.Close(); // Cerramos la instancia actual de index
-            }
+                // Obtén una referencia al formulario MDI principal
+                if (this.MdiParent is appStrart app)
+                {
+                    Play play = new Play(name); // Crea una instancia de Play
+                    play.Width = app.ClientSize.Width - 4;
+                    play.Height = app.ClientSize.Height - 4;
+                    play.MdiParent = app; // Establece el formulario MDI principal como el padre de play
+                    play.Show(); // Muestra play
+                    this.Close(); // Cerramos la instancia actual de index
+                }
+            } else {
+                MessageBox.Show("El nombre no puede estar vacio", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } 
         }
 
         //Jugamos con los eventos del btnPlay para darle mas vida al codigo

@@ -113,6 +113,26 @@ namespace Sapiens.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnNaranja {
+            get {
+                object obj = ResourceManager.GetObject("btnNaranja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OsoAnteojos {
+            get {
+                object obj = ResourceManager.GetObject("OsoAnteojos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ranura {
             get {
                 object obj = ResourceManager.GetObject("ranura", resourceCulture);
