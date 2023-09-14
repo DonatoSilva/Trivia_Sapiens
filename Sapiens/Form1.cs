@@ -22,7 +22,7 @@ namespace Sapiens
             showIndex(width, height);
         }
 
-        private void showIndex(int width, int height)
+        public void showIndex(int width, int height)
         {
             Index index = new Index();
             index.MdiParent = this;

@@ -32,7 +32,7 @@ namespace Sapiens
                 // Obtén una referencia al formulario MDI principal
                 if (this.MdiParent is appStrart app)
                 {
-                    Play play = new Play(name); // Crea una instancia de Play
+                    Play play = new Play(name, 1, 0); // Crea una instancia de Play
                     play.Width = app.ClientSize.Width - 4;
                     play.Height = app.ClientSize.Height - 4;
                     play.MdiParent = app; // Establece el formulario MDI principal como el padre de play

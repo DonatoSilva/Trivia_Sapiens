@@ -61,6 +61,15 @@ namespace Sapiens.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Aplausos {
+            get {
+                return ResourceManager.GetStream("Aplausos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap banner_1 {
@@ -121,11 +130,50 @@ namespace Sapiens.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Equivocado {
+            get {
+                return ResourceManager.GetStream("Equivocado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GatoAndino {
+            get {
+                object obj = ResourceManager.GetObject("GatoAndino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap OsoAnteojos {
             get {
                 object obj = ResourceManager.GetObject("OsoAnteojos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PlanetaJupiter {
+            get {
+                object obj = ResourceManager.GetObject("PlanetaJupiter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PlanetaMercurio {
+            get {
+                object obj = ResourceManager.GetObject("PlanetaMercurio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

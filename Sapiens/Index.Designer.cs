@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(136, 354);
+            this.label1.Location = new System.Drawing.Point(146, 354);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 41);
             this.label1.TabIndex = 2;
@@ -62,7 +62,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(176, 519);
+            this.label2.Location = new System.Drawing.Point(195, 520);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 25);
             this.label2.TabIndex = 3;
@@ -74,9 +74,9 @@
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(98, 576);
+            this.txtName.Location = new System.Drawing.Point(96, 576);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(311, 31);
+            this.txtName.Size = new System.Drawing.Size(361, 31);
             this.txtName.TabIndex = 4;
             // 
             // btnInf
@@ -88,7 +88,7 @@
             this.btnInf.Cursor = System.Windows.Forms.Cursors.Help;
             this.btnInf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(133)))), ((int)(((byte)(0)))));
-            this.btnInf.Location = new System.Drawing.Point(19, 727);
+            this.btnInf.Location = new System.Drawing.Point(19, 816);
             this.btnInf.Margin = new System.Windows.Forms.Padding(10);
             this.btnInf.Name = "btnInf";
             this.btnInf.Size = new System.Drawing.Size(60, 54);
@@ -112,7 +112,7 @@
             this.btnPlay.Location = new System.Drawing.Point(181, 635);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnPlay.Size = new System.Drawing.Size(147, 37);
+            this.btnPlay.Size = new System.Drawing.Size(197, 37);
             this.btnPlay.TabIndex = 5;
             this.btnPlay.Text = "Jugar";
             this.btnPlay.UseVisualStyleBackColor = false;
@@ -128,7 +128,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(502, 435);
+            this.pictureBox2.Size = new System.Drawing.Size(552, 435);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -146,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(133)))), ((int)(((byte)(0)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(500, 800);
+            this.ClientSize = new System.Drawing.Size(550, 900);
             this.ControlBox = false;
             this.Controls.Add(this.btnInf);
             this.Controls.Add(this.btnPlay);

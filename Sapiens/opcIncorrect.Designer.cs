@@ -1,6 +1,6 @@
 ﻿namespace Sapiens
 {
-    partial class opcCorrect
+    partial class opcIncorrect
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // opcCorrect
+            // opcIncorrect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(133)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(550, 900);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "opcCorrect";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "opcCorrect";
-            this.Load += new System.EventHandler(this.opcCorrect_Load);
+            this.Name = "opcIncorrect";
+            this.Text = "opcIncorrect";
             this.ResumeLayout(false);
 
         }
