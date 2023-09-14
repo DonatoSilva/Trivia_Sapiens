@@ -148,9 +148,8 @@ namespace Sapiens
         }
 
         private void EndTime()
-        {
-            // Aquí puedes realizar la acción que deseas cuando el contador llega a 0
-            MessageBox.Show("¡El contador llegó a 0!");
+        {  
+            showIncorrectOption();
         }
     }
 }

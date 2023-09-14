@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnShowIndex = new System.Windows.Forms.Button();
             this.btnNextQuestion = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.textTextMessage.ForeColor = System.Drawing.Color.White;
             this.textTextMessage.Location = new System.Drawing.Point(0, 175);
             this.textTextMessage.Name = "textTextMessage";
-            this.textTextMessage.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
+            this.textTextMessage.Padding = new System.Windows.Forms.Padding(16, 8, 16, 8);
             this.textTextMessage.Size = new System.Drawing.Size(550, 96);
             this.textTextMessage.TabIndex = 4;
             this.textTextMessage.Text = "¡Muy bien! ¡Respuesta correcta!, se nota su inteligencia";
@@ -124,12 +125,25 @@
             this.btnNextQuestion.UseVisualStyleBackColor = true;
             this.btnNextQuestion.Click += new System.EventHandler(this.BtnNextQuestion_Click);
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Small", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 758);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(550, 57);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "¿Que vas a hacer a continuación?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // opcCorrect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(550, 900);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textTextMessage);
@@ -153,5 +167,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnShowIndex;
         private System.Windows.Forms.Button btnNextQuestion;
+        private System.Windows.Forms.Label label1;
     }
 }
