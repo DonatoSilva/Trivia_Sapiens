@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Sapiens
 {
@@ -29,19 +30,24 @@ namespace Sapiens
             String name = txtName.Text.Trim();
             if (!String.IsNullOrEmpty(name))
             {
-                // Obtén una referencia al formulario MDI principal
-                if (this.MdiParent is appStrart app)
-                {
-                    Play play = new Play(name, 1, 0); // Crea una instancia de Play
-                    play.Width = app.ClientSize.Width - 4;
-                    play.Height = app.ClientSize.Height - 4;
-                    play.MdiParent = app; // Establece el formulario MDI principal como el padre de play
-                    play.Show(); // Muestra play
-                    this.Close(); // Cerramos la instancia actual de index
-                }
+                showPlay(name, 1, 0);
             } else {
                 MessageBox.Show("El nombre no puede estar vacio", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } 
+        }
+
+        private void showPlay(string name, int numberQuestion, int numberCorrectQuestion)
+        {
+            // Obtén una referencia al formulario MDI principal
+            if (this.MdiParent is appStrart app)
+            {
+                Play play = new Play(name, numberQuestion, numberCorrectQuestion); // Crea una instancia de Play
+                play.Width = app.ClientSize.Width - 4;
+                play.Height = app.ClientSize.Height - 4;
+                play.MdiParent = app; // Establece el formulario MDI principal como el padre de play
+                play.Show(); // Muestra play
+                this.Close(); // Cerramos la instancia actual de index
+            }
         }
 
         //Jugamos con los eventos del btnPlay para darle mas vida al codigo

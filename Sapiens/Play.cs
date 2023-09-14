@@ -19,12 +19,14 @@ namespace Sapiens
 
         private int timeCronometro = 30; //segundo del cronometro
         private string correctOption;
+        private string name;
         public Dictionary<int, TriviaItem> Questions { get; set; }
         
         public Play(String name, int numberQuestion, int numberCorect)
         {
             InitializeComponent();
             Questions = new Dictionary<int, TriviaItem>();
+            this.name = name;
 
             timer1.Enabled = true; // se inicia el cronometro
             numberTrivia.Text = numberQuestion.ToString();
@@ -36,7 +38,7 @@ namespace Sapiens
             SetQuestion(3, Properties.Resources.PlanetaJupiter, "¿Que planeta es el más grande del sistema solar?", new List<string> { "Saturno", "Júpiter", "Neptuno" }, 1);
             SetQuestion(4, Properties.Resources.GatoAndino, "¿Que animal es el más pequeño de la familia de los felinos?", new List<string> { "Gato andino", "Trigrillo", "Gato montes" }, 0);
 
-            viewQuestion(3, name);
+            viewQuestion(numberQuestion, this.name);
         }
 
         //Mostramos la pregunta selecciona en la pantalla
@@ -120,10 +122,10 @@ namespace Sapiens
         }
 
         private void showCorrectOption()
-        {
+        {   
             if(this.MdiParent is appStrart app)
             {
-                opcCorrect opcCorrect = new opcCorrect();
+                opcCorrect opcCorrect = new opcCorrect(this.name, int.Parse(numberTrivia.Text), int.Parse(numberCorrect.Text));
                 opcCorrect.Width = app.ClientSize.Width - 4;
                 opcCorrect.Height = app.ClientSize.Height - 4;
                 opcCorrect.MdiParent = app;
@@ -134,7 +136,15 @@ namespace Sapiens
 
         private void showIncorrectOption()
         {
-            MessageBox.Show("Opcion Incorrecta");
+            if (this.MdiParent is appStrart app)
+            {
+                opcIncorrect opcIncorrect = new opcIncorrect(this.name, int.Parse(numberTrivia.Text), int.Parse(numberCorrect.Text) );
+                opcIncorrect.Width = app.ClientSize.Width - 4;
+                opcIncorrect.Height = app.ClientSize.Height - 4;
+                opcIncorrect.MdiParent = app;
+                opcIncorrect.Show();
+                this.Close(); // cierro esta instancia de Play
+            }
         }
 
         private void EndTime()
