@@ -67,7 +67,7 @@ namespace Sapiens
                 // Obtén una referencia al formulario MDI principal
                 if (this.MdiParent is appStrart app)
                 {
-                    endPlay endPlay = new endPlay(this.name, this.numberQuiestion, this.numberCorrect);
+                    endPlay endPlay = new endPlay(this.name, this.numberQuiestion, this.numberCorrect + 1);
                     endPlay.Width = app.ClientSize.Width - 4;
                     endPlay.Height = app.ClientSize.Height - 4;
                     endPlay.MdiParent = app; // Establece el formulario MDI principal como el padre de play
