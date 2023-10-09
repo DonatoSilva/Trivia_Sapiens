@@ -17,7 +17,6 @@ La interfaz principal de la aplicación muestra una imagen relacionada con el te
 
 - [Tecnologías](#tecnologías)
 - [Imagenes](#imagenes)
-- [Demostracion](#demostracion)
 - [Contacto](#contacto)
 
 ## Tecnologías 
@@ -34,11 +33,8 @@ Para la mejora visual, se utilizo: <br>
 
 ## Imagenes
 
+![Imagen de las vistas de la aplicación](/Captura%20de%20pantalla%202023-10-09%20122107.png)
 
-
-## Demostracion
-
-[Ver video](#)
 
 ## Contacto
 
